@@ -7,3 +7,10 @@ functions:
     lang: php7
     handler: ./getgeoip
     image: darkflib/getgeoip:latest
+  s3test:
+    lang: php7
+    handler: ./s3test
+    image: s3test:latest
+    secrets:
+      - wasabi.access-key-id
+      - wasabi.secret-access-key
